@@ -1,0 +1,73 @@
+body {
+    font-family: 'Sono', 'sans-serif';
+    background-color: #bee2e7;
+}
+
+
+.pricing-container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pricing-plan {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.plan-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.plan-price {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.plan-features li {
+    margin-bottom: 15px;
+}
+
+.plan-button {
+    background-color: #35c465;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+fieldset{
+    border: 1px solid #1dac4a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .pricing-container {
+        flex-direction: column;
+        width: 100%;
+      }
+      h1,h2{
+        text-align: center;
+      }
+}
