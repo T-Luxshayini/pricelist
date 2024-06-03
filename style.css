@@ -4,7 +4,7 @@ body {
 }
 
 
-.pricing-container {
+.main-container {
     display: flex;
     height: 80vh;
     justify-content: center;
@@ -12,35 +12,51 @@ body {
     gap: 2rem;
 }
 
-.pricing-plan {
+.pricing-range {
     flex: 1;
     max-width: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    transition: box-shadow .3s;
+    transform: scale(1.1); 
+     width: 300px;
+  height: 500px;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  
 }
+.two{
+    height: 400px;
+}
+.pricing-range:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,2); 
+  }
 
-.plan-title {
+.plan-head {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
-.plan-price {
+.price {
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 15px;
 }
 
-.plan-features {
+.features {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.plan-features li {
+.features li {
     margin-bottom: 15px;
 }
 
@@ -62,8 +78,9 @@ fieldset{
 }
 
 
+
 @media (max-width: 1024px) {
-    .pricing-container {
+    .main-container {
         flex-direction: column;
         width: 100%;
       }
